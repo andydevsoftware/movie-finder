@@ -1,36 +1,181 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+MovieFinder – Frontend Portfolio Project
 
-## Getting Started
+A modern movie discovery application inspired by streaming platforms, built with Next.js, React, and TypeScript, focused on performance, smooth animations, and a polished, production-like user experience.
 
-First, run the development server:
+This project is part of my frontend developer portfolio and showcases advanced component architecture, global state management, API integration, and UI/UX decisions inspired by real-world streaming applications.
 
-```bash
+✨ Live Demo
+
+Deployment in progress
+
+📸 Preview
+![desktop](image.png)
+![mobile](image-1.png)
+
+🚀 Features
+
+- Browse movies by popular genres (Netflix-style rows)
+
+- Real-time movie search with debounced input
+
+- Infinite scrolling for search results
+
+- Detailed movie modal with:
+
+- Full movie information
+
+- Trailer playback (YouTube)
+
+- Similar movie recommendations
+
+- Add / remove movies from favorites
+
+- Persistent favorites and viewing history
+
+Sort favorites by:
+
+- Rating
+
+- Alphabetical order
+
+Advanced filters:
+
+- Release year
+
+- Minimum rating
+
+- Original language
+
+- Keyboard navigation support (Escape, focus handling)
+
+- Smooth animations and transitions using Framer Motion
+
+- Fully responsive, mobile-first design
+
+- Dark UI inspired by modern streaming platforms
+
+Note:
+
+The application UI is in Spanish, while the codebase and documentation are written in English.
+
+🧠 Project Structure
+
+src/
+├── app/
+│ ├── globals.css # Global styles and Tailwind setup
+│ ├── layout.tsx # Root layout
+│ └── page.tsx # Application entry point
+│
+├── components/
+│ ├── MoviesApp.tsx # Main application logic and navigation
+│ ├── MovieRow.tsx # Horizontal movie rows by genre
+│ ├── MoviesGrid.tsx # Grid layout for search, favorites, history
+│ ├── MovieCard.tsx # Individual movie card with hover effects
+│ ├── MovieModal.tsx # Full-screen movie details modal
+│ ├── AdvancedFilters.tsx # Advanced filtering panel
+│ ├── SortDropdown.tsx # Favorites sorting
+│ ├── LazyImage.tsx # Custom lazy-loaded image component
+│ ├── Footer.tsx # Animated footer with links and social icons
+│ └── ToastContainer.tsx # Notifications
+│
+├── hooks/
+│ ├── useInfiniteScroll.ts # Infinite scroll logic
+│ └── UseKeyboardNavigation.ts # Keyboard accessibility
+│
+├── lib/
+│ ├── tmdb.ts # TMDB API requests
+│ ├── store.ts # Global state (favorites, filters, history)
+│ └── favorites.ts # Favorites helpers
+│
+├── types/
+│ └── movie.ts # Movie and API TypeScript types
+│
+└── public/
+└── icons / favicons
+
+⚙️ Tech Stack
+
+- Frontend
+
+React
+
+Next.js (App Router)
+
+TypeScript
+
+Tailwind CSS
+
+- State & Logic
+
+Custom global store (Zustand-style pattern)
+
+React hooks
+
+Memoization for performance optimization
+
+- UI & UX
+
+Framer Motion (animations & transitions)
+
+Custom hover and focus interactions
+
+Keyboard accessibility
+
+Lazy-loaded images
+
+- API
+
+The Movie Database (TMDB)
+
+🧩 Key Implementation Details
+
+Optimized rendering using memo and controlled re-renders
+
+Debounced search input to reduce API calls
+
+Infinite scrolling with pagination handling
+
+Modular, reusable components
+
+Centralized global state for favorites, filters, sorting, and history
+
+Custom LazyImage component to avoid layout shifts and white flashes
+
+Modal system with nested modals for similar movies
+
+Scroll locking and focus management for accessibility
+
+Netflix-style hover scaling and overlays
+
+🛠 Installation & Usage
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a .env.local file and add your TMDB API key:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+NEXT_PUBLIC_TMDB_API_KEY=your_api_key_here
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🎯 Project Purpose
 
-## Learn More
+This project was built to:
 
-To learn more about Next.js, take a look at the following resources:
+Demonstrate advanced React + TypeScript skills
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Showcase real-world frontend architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Build a UI close to production streaming platforms
 
-## Deploy on Vercel
+Highlight animation, performance, and UX attention to detail
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Serve as a strong portfolio project for frontend roles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👤 Author
+
+Andy Sebastian
+
+Frontend Developer
+
+GitHub: https://github.com/andydevsoftware
+
+Portfolio: In progress
