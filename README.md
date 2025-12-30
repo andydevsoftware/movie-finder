@@ -1,16 +1,23 @@
-MovieFinder – Frontend Portfolio Project
+# 📹 MovieFinder – Frontend Portfolio Project
 
 A modern movie discovery application inspired by streaming platforms, built with Next.js, React, and TypeScript, focused on performance, smooth animations, and a polished, production-like user experience.
 
 This project is part of my frontend developer portfolio and showcases advanced component architecture, global state management, API integration, and UI/UX decisions inspired by real-world streaming applications.
 
-🔗 Live Demo: https://movie-finder-phi-two.vercel.app/
+---
 
-📸 Preview
+## 🔗 Live Demo: https://movie-finder-phi-two.vercel.app/
+
+---
+
+### 📸 Preview
+
 ![desktop](image.png)
 ![mobile](image-1.png)
 
-🚀 Features
+---
+
+## 🚀 Features
 
 - Browse movies by popular genres (Netflix-style rows)
 
@@ -30,13 +37,13 @@ This project is part of my frontend developer portfolio and showcases advanced c
 
 - Persistent favorites and viewing history
 
-Sort favorites by:
+### Sort favorites by:
 
 - Rating
 
 - Alphabetical order
 
-Advanced filters:
+### Advanced filters:
 
 - Release year
 
@@ -52,80 +59,70 @@ Advanced filters:
 
 - Dark UI inspired by modern streaming platforms
 
-Note:
+### Note:
 
 The application UI is in Spanish, while the codebase and documentation are written in English.
 
-🧠 Project Structure
+---
 
+## 🧠 Project Structure
+
+```
 src/
 ├── app/
-│ ├── globals.css # Global styles and Tailwind setup
-│ ├── layout.tsx # Root layout
-│ └── page.tsx # Application entry point
+│ ├── globals.css                  # Global styles and Tailwind setup
+│ ├── layout.tsx                  # Root layout
+│ └── page.tsx                    # Application entry point
 │
 ├── components/
-│ ├── MoviesApp.tsx # Main application logic and navigation
-│ ├── MovieRow.tsx # Horizontal movie rows by genre
-│ ├── MoviesGrid.tsx # Grid layout for search, favorites, history
-│ ├── MovieCard.tsx # Individual movie card with hover effects
-│ ├── MovieModal.tsx # Full-screen movie details modal
-│ ├── AdvancedFilters.tsx # Advanced filtering panel
-│ ├── SortDropdown.tsx # Favorites sorting
-│ ├── LazyImage.tsx # Custom lazy-loaded image component
-│ ├── Footer.tsx # Animated footer with links and social icons
-│ └── ToastContainer.tsx # Notifications
+│ ├── MoviesApp.tsx                     # Main application logic and navigation
+│ ├── MovieRow.tsx                      # Horizontal movie rows by genre
+│ ├── MoviesGrid.tsx                    # Grid layout for search, favorites, history
+│ ├── MovieCard.tsx                     # Individual movie card with hover effects
+│ ├── MovieModal.tsx                    # Full-screen movie details modal
+│ ├── AdvancedFilters.tsx               # Advanced filtering panel
+│ ├── SortDropdown.tsx                  # Favorites sorting
+│ ├── LazyImage.tsx                     # Custom lazy-loaded image component
+│ ├── Footer.tsx                        # Animated footer with links and social icons
+│ └── ToastContainer.tsx                # Notifications
 │
 ├── hooks/
-│ ├── useInfiniteScroll.ts # Infinite scroll logic
-│ └── UseKeyboardNavigation.ts # Keyboard accessibility
+│ ├── useInfiniteScroll.ts              # Infinite scroll logic
+│ └── UseKeyboardNavigation.ts          # Keyboard accessibility
 │
 ├── lib/
-│ ├── tmdb.ts # TMDB API requests
-│ ├── store.ts # Global state (favorites, filters, history)
-│ └── favorites.ts # Favorites helpers
+│ ├── tmdb.ts                         # TMDB API requests
+│ ├── store.ts                        # Global state (favorites, filters, history)
+│ └── favorites.ts                    # Favorites helpers
 │
 ├── types/
-│ └── movie.ts # Movie and API TypeScript types
+│ └── movie.ts                         # Movie and API TypeScript types
 │
 └── public/
 └── icons / favicons
+```
 
-⚙️ Tech Stack
+---
+
+## ⚙️ Tech Stack
 
 - Frontend
 
-React
+- React
 
-Next.js (App Router)
+- Next.js (App Router)
 
-TypeScript
+- TypeScript
 
-Tailwind CSS
+- Tailwind CSS
 
 - State & Logic
 
-Custom global store (Zustand-style pattern)
+- API: The Movie Database (TMDB)
 
-React hooks
+---
 
-Memoization for performance optimization
-
-- UI & UX
-
-Framer Motion (animations & transitions)
-
-Custom hover and focus interactions
-
-Keyboard accessibility
-
-Lazy-loaded images
-
-- API
-
-The Movie Database (TMDB)
-
-🧩 Key Implementation Details
+## 🧩 Key Implementation Details
 
 Optimized rendering using memo and controlled re-renders
 
@@ -145,16 +142,31 @@ Scroll locking and focus management for accessibility
 
 Netflix-style hover scaling and overlays
 
-🛠 Installation & Usage
+---
 
+## 🛠 Installation & Usage
+
+```bash
+# Install dependencies
 npm install
+
+# Run in development mode
 npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
 
 Create a .env.local file and add your TMDB API key:
 
 NEXT_PUBLIC_TMDB_API_KEY=your_api_key_here
 
-🎯 Project Purpose
+---
+
+## 🎯 Project Purpose
 
 This project was built to:
 
@@ -168,7 +180,9 @@ Highlight animation, performance, and UX attention to detail
 
 Serve as a strong portfolio project for frontend roles
 
-👤 Author
+---
+
+## 👤 Author
 
 Andy Sebastian
 
