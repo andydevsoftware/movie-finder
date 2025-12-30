@@ -4,9 +4,7 @@ A modern movie discovery application inspired by streaming platforms, built with
 
 This project is part of my frontend developer portfolio and showcases advanced component architecture, global state management, API integration, and UI/UX decisions inspired by real-world streaming applications.
 
-✨ Live Demo
-
-Deployment in progress
+🔗 Live Demo: https://movie-finder-phi-two.vercel.app/
 
 📸 Preview
 ![desktop](image.png)
